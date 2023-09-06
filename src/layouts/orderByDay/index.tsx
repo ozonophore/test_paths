@@ -10,7 +10,7 @@ import moment from 'moment/moment';
 
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 import IconButton from '@mui/joy/IconButton';
-import { OrdersService } from '@client';
+import { OrdersService } from 'client';
 
 export function OrderByDay() {
     const [date, setDate] = useState(moment().format("yyyy-MM-DD"))

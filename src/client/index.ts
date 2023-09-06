@@ -2,13 +2,11 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-export { ApiError } from './core/ApiError';
-export { CancelablePromise, CancelError } from './core/CancelablePromise';
-export { OpenAPI } from './core/OpenAPI';
-export type { OpenAPIConfig } from './core/OpenAPI';
+export * from './core/ApiError';
+export * from './core/CancelablePromise';
+export * from './core/OpenAPI';
 
-export type { Stock } from './models/Stock';
-export type { Stocks } from './models/Stocks';
+export * from './models/Stock';
 
-export { OrdersService } from './services/OrdersService';
-export { StocksService } from './services/StocksService';
+export * from './services/OrdersService';
+export * from './services/StocksService';

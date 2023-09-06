@@ -461,17 +461,17 @@ export default function OrderTable() {
             </tr>
           </thead>
           <tbody>
-            {stableSort(rows, getComparator(order, 'id')).map((row) => (
+            {stableSort(rows, getComparator(order, 'id')).map((row ) => (
               <tr key={row.id}>
                 <td style={{ textAlign: 'center', width: 120 }}>
                   <Checkbox
                     size="sm"
-                    checked={selected.includes(row.id)}
-                    color={selected.includes(row.id) ? 'primary' : undefined}
+                    checked={selected.includes(row.id as string)}
+                    color={selected.includes(row.id as string) ? 'primary' : undefined}
                     onChange={(event) => {
                       setSelected((ids) =>
                         event.target.checked
-                          ? ids.concat(row.id)
+                          ? ids.concat(row.id as string)
                           : ids.filter((itemId) => itemId !== row.id),
                       );
                     }}
@@ -494,7 +494,7 @@ export default function OrderTable() {
                         Paid: <CheckRoundedIcon />,
                         Refunded: <AutorenewRoundedIcon />,
                         Cancelled: <BlockIcon />,
-                      }[row.status]
+                      }[row.status as string]
                     }
                     color={
                       {

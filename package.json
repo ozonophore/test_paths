@@ -9,10 +9,10 @@
     "@types/react-dom": "latest",
     "deep-equal": "^2.2.2",
     "moment": "^2.29.4",
-    "react": "latest",
-    "react-dom": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-router-dom": "^6.15.0",
-    "typescript": "latest"
+    "typescript": "5.1.6"
   },
   "description": "https://github.com/mui/material-ui/blob/v5.14.5/docs/data/joy/templates/order-dashboard/App.tsx",
   "devDependencies": {

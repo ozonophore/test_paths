@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2015",
     "lib": [
       "dom",
       "dom.iterable",
@@ -12,18 +12,16 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "baseUrl": "src",
-    "paths": {
-      "@client": ["client"]
-    }
+    "baseUrl": "src"
   },
   "include": [
     "src"
-  ],
+  ]
 }
